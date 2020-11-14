@@ -1,0 +1,54 @@
+//css
+:root {
+  //HEadings
+  --h1: calc(2rem + 1vw);
+  --h2: calc(5rem + 1vw);
+  --h3: calc(3rem + 1vw);
+  --h4: calc(0.1rem + 1vw);
+
+  --p: calc(0.2rem + 1vw);
+  --bigtext: calc(6rem + 1vw);
+  @include respond(tab-land) {
+    --h2: calc(6rem + 1vw);
+    --h1: calc(3rem + 1vw);
+    --h4: calc(1.2rem + 1vw);
+    --p: calc(1rem + 1vw);
+  }
+  @include respond(tab-port) {
+    --h2: calc(6rem + 1vw);
+    --h1: calc(3rem + 1vw);
+    --h4: calc(1.7rem + 1vw);
+    --p: calc(1.5rem + 1vw);
+  }
+  @include respond(phone) {
+    --h2: calc(5rem + 1vw);
+    --h1: calc(3rem + 1vw);
+    --h4: calc(1.7rem + 1vw);
+    --p: calc(1.5rem + 1vw);
+  }
+  --shadow-dark: 1rem 1rem 4rem rgba(0, 0, 0, 0.5),
+    -1rem -1rem 4rem rgba(0, 0, 0, 0.5);
+  --line: 1px solid var(--color-grey-light-2);
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.05);
+}
+
+//Colors
+$color-primary: #34ffc8;
+$color-primary-light: #ffda79;
+$color-primary-dark: #cc8e35;
+$color-grey-light-1: #faf9f9;
+$color-grey-light-2: #f4f2f2;
+$color-grey-light-3: #f0eeee;
+$color-grey-light-4: #ccc;
+
+$color-grey-dark-1: #212121;
+$color-grey-dark: #777;
+$color-grey-dark-3: #999;
+$color-black: #000;
+$color-white: #fff;
+
+// FONT VARIABLES
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:wght@100;300;400;700;900&display=swap");
+
+$font-primary: "Archivo Black", sans-serif;
+$font-secondary: "Roboto", sans-serif;

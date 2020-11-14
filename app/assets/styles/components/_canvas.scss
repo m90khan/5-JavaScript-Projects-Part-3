@@ -1,0 +1,21 @@
+.section-canvas {
+  min-height: 100vh;
+  @include flex(row, center, center);
+  padding: 4rem 0;
+  background-color: #0093e9;
+  border-bottom: 1rem solid #4affea;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+}
+.canvas {
+  background: $color-grey-dark-1;
+  @include flex(column, center, center);
+
+  padding: 4rem 6rem;
+  border-radius: 1rem;
+  width: 80%;
+  color: #fff;
+
+  canvas {
+    // background: transparent !important;
+  }
+}
